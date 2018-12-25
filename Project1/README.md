@@ -31,19 +31,19 @@ The MNIST database of handwritten digits, available from this page, has a traini
 ### Report
 loss with iterations(mnist dataset)
 
-<img src="tree/master/Project1/project_picture/mnist_SGD_iteration.jpg" alt="alt text" width=500 height=350>
+<img src="project_picture/mnist_SGD_iteration.jpg" alt="alt text" width=500 height=350>
 
 loss with time(mnist dataset)
 
-<img src="tree/master/Project1/project_picture/mnist_SGD_loss_time.jpg" alt="alt text" width=500 height=350>
+<img src="project_picture/mnist_SGD_loss_time.jpg" alt="alt text" width=500 height=350>
 
 hyperparameter with accuracy(titanic)
 lambda chosen = [0, 0.0001, 0.001, 0.01, 0.1, 1, 10]
 
-<img src="tree/master/Project1/project_picture/accuracy-titanic.jpg" alt="alt text" width=500 height=350>
+<img src="project_picture/accuracy-titanic.jpg" alt="alt text" width=500 height=350>
 
 hyperparameter with accuracy(mnist)
 
-<img src="tree/master/Project1/project_picture/mnist_accuracy.jpg" alt="alt text" width=500 height=350>
+<img src="project_picture/mnist_accuracy.jpg" alt="alt text" width=500 height=350>
 
 
