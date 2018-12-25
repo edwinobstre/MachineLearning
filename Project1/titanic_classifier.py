@@ -2,7 +2,6 @@ import autograd.numpy as np
 import pandas as pd
 from autograd import grad
 import matplotlib.pyplot as plt
-import pickle
 
 # Model
 class MyLogisticReg:
@@ -249,24 +248,17 @@ def main():
     model = MyLogisticReg([True, X_train, y_train, X_test, y_test, X, y])
     # Regularizer Selection
     weight_initial = np.random.rand(len(data[0]))
-    #lamda_choice = [0, 0.0001, 0.001, 0.01, 0.1, 1, 10]
-    #model.plt_accuracy(lamda_choice, weight_initial)
-    #model.fit(weight_initial)
-    #model.train_accuracy()
+    lamda_choice = [0, 0.0001, 0.001, 0.01, 0.1, 1, 10]
+    model.plt_accuracy(lamda_choice, weight_initial)
+    model.fit(weight_initial)
+    model.train_accuracy()
     #X_trainfolder, y_trainfolder, X_testfolder,y_testfolder = split_data_crossvalid(data)
     #model.cross_valid_accuracy(X_trainfolder, y_trainfolder, X_testfolder,y_testfolder, weight_initial)
     # prediction
-    #y_pred = model.predict()
+    y_pred = model.predict()
     # evaluation
-    #test_accuracy = model.evaluate(y_pred)
-    #print('The test accuracy of logistic regression is ' + str(test_accuracy))
+    test_accuracy = model.evaluate(y_pred)
+    print('The test accuracy of logistic regression is ' + str(test_accuracy))
 
-    options = [True, model.X_train, model.y_train, model.X_test, model.y_test, X, y]
-    test = MyLogisticReg(options)
-    test.fit(weight_initial)
-    pickle.dump(test,open("titanic_classifier.pkl","wb"))
-    test_pickle = pickle.load(open("titanic_classifier.pkl","rb"))
-    y_pred = test_pickle.predict()
-    k = test.pickle.evaluate(y_pred)
 if __name__=="__main__":
     main()
