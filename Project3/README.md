@@ -21,7 +21,3 @@ note: dataset should be in the same directory .
 
 ### Dataset
 MovieLens 100K dataset, which has 100,000 movie reviews. Click [data](https://grouplens.org/datasets/movielens/100k/) for more information and to download the data.
-
-
-
-
