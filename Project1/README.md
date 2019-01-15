@@ -45,5 +45,3 @@ lambda chosen = [0, 0.0001, 0.001, 0.01, 0.1, 1, 10]
 hyperparameter with accuracy(mnist)
 
 <img src="project_picture/mnist_accuracy.jpg" alt="alt text" width=500 height=350>
-
-
